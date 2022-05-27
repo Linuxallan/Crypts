@@ -1,0 +1,32 @@
+Contract solidity Crypts Verification 
+
+_maxTxAmount
+—> ni muy pequeño ni muy grande
+	·	Si es pequeño: no podremos vender los tokens
+	·	Si es grande: las ballenas podrán vender todo de una.
+—> se debe comparar con el TotalSupply y debe corresponder a un 2% - 10% del total, para protegernos de las ballenas.
+
+_maxWalletAmount: cantidad maxima que puede haber en una billetera.
+_owner : propietario del contrato (ES DIFERENTE LA DIRECCION A LA DEL CONTRATO)
+	—> si aparece esto es ESTAFA : 0x0000000000000000000000000000000000000000 **** NO ****
+
+_deadAddress : significa que los dueños han renunciado al token **** YES **** (Descentralizado, es libre el token)
+	—> 0x000000000000000000000000000000000000dead
+	ESTA DIRECCION SIRVE TAMBIEN PARA QUEMAR TOKENS
+
+_antiWhale : restring que las ballenas vendan todo, habilita solo un porcentaje de la venta (1% por ejemplo de su total de tokens de la ballena)
+
+
+
+
+Pixel swap
+_maxTxAmount : 	450000000000000000000000000 (100% ***BAD*** )
+_totalSupply: 		450000000000000000000000000
+**** NO HAY PROTECCION CONTRA BALLENAS ****
+—> Si puedo vender todos mis tokens
+
+_maxWalletAmount: 450000000000000000000000000 (100%)
+_owner : 0xa3439b2149564583c43172df3997b2405b6c3f65
+_contract : 0x9B52099Abc5cd8243B00843dc8d6839BcEEE9177
+_deadAddress : —————— N/A ###
+_antiwhale : ——————— N/A

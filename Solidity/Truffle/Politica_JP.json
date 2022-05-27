@@ -1,0 +1,66 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "SomeServices0",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:GetManagedPrefixListEntries",
+                "ec2:GetIpamResourceCidrs",
+                "ec2:GetIpamPoolCidrs",
+                "ec2:ExportClientVpnClientConfiguration",
+                "ec2:GetCapacityReservationUsage",
+                "ec2:GetAssociatedEnclaveCertificateIamRoles",
+                "ec2:GetConsoleOutput",
+                "ec2:GetIpamAddressHistory",
+                "ec2:ExportClientVpnClientCertificateRevocationList",
+                "ec2:GetPasswordData",
+                "ec2:GetLaunchTemplateData",
+                "ec2:GetFlowLogsIntegrationTemplate",
+                "ec2:GetManagedPrefixListAssociations",
+                "ec2:GetIpamPoolAllocations"
+            ],
+            "Resource": [
+                "arn:aws:ec2:us-east-1:*:capacity-reservation/i-0a499f3d27d2a3850",
+                "arn:aws:ec2:us-east-1:*:capacity-reservation/i-0a1e5312641d729e4",
+                "arn:aws:ec2:us-east-1:*:capacity-reservation/i-0d248f3a02918aa70",
+                "arn:aws:ec2:us-east-1:*:capacity-reservation/i-0b5f0ef7b407e0d57",
+                "arn:aws:ec2:us-east-1:*:capacity-reservation/i-081c41587835d4904"
+            ]
+        },
+        {
+            "Sid": "SomeServices1",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:GetDefaultCreditSpecification",
+                "ec2:DescribeTags",
+                "ec2:GetCoipPoolUsage",
+                "ec2:DescribeVpnConnections",
+                "ec2:GetEbsEncryptionByDefault",
+                "ec2:DescribeVolumesModifications",
+                "ec2:GetHostReservationPurchasePreview",
+                "ec2:GetNetworkInsightsAccessScopeAnalysisFindings",
+                "ec2:DescribeFastSnapshotRestores",
+                "ec2:GetNetworkInsightsAccessScopeContent",
+                "ec2:GetSubnetCidrReservations",
+                "ec2:GetConsoleScreenshot",
+                "ec2:GetReservedInstancesExchangeQuote",
+                "ec2:GetInstanceTypesFromInstanceRequirements",
+                "ec2:DescribeScheduledInstances",
+                "ec2:GetSerialConsoleAccessStatus",
+                "ec2:GetAssociatedIpv6PoolCidrs",
+                "ec2:DescribeScheduledInstanceAvailability",
+                "ec2:GetSpotPlacementScores",
+                "ec2:GetEbsDefaultKmsKeyId",
+                "ec2:DescribeElasticGpus"
+            ],
+            "Resource": [
+                "arn:aws:ec2:us-east-1:*:instance/i-0a499f3d27d2a3850",
+                "arn:aws:ec2:us-east-1:*:instance/i-0a1e5312641d729e4",
+                "arn:aws:ec2:us-east-1:*:instance/i-0d248f3a02918aa70",
+                "arn:aws:ec2:us-east-1:*:instance/i-0b5f0ef7b407e0d57",
+                "arn:aws:ec2:us-east-1:*:instance/i-081c41587835d4904"
+            ]
+        }
+    ]
+}
